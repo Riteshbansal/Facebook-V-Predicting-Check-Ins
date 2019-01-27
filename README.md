@@ -94,13 +94,13 @@ The goal of ensemble methods is to combine the predictions of sev- eral base est
 Here, we have used the concept of soft voting for classifiers. H represents a classifier, where it takes the feature vector X as the input and P(place_id) as output. These classifiers are combined by taking a weighted average of their probabilities and then picking the top 3 place_id’s with the three highest probabilities.
 The weights α, β and γ are tunable, but we have chosen trivial values for the weights where all of them are set to one.
 
-#### 4.3 Neural Networks
+#### 4.4 Neural Networks
 
 Artificial neural networks[6] are one of the main tools used in machine learning. As the âĂIJneuralâĂİ part of their name suggests, they are brain-inspired systems which are intended to replicate the way that we humans learn. Neural networks consist of input and output layers, as well as (in most cases) a hidden layer consisting of units that transform the input into something that the output layer can use.
 
 ![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/artificial_neural_network.jpg)
 
-#### 4.3.1 Neural Network based model for Place_id prediction
+#### 4.4.1 Neural Network based model for Place_id prediction
 The Neural network model we have trained has one input layer, 4 hidden layers and an output layers arranged in sequential order. Our hidden layers have 128, 512, 512 and 512 nodes respectively. The all the nodes in the input layer along with the 4 hidden layers have "relu" as their activation function, and the output node has "softmax" activation function, with as many output nodes as the number of unique place_ids available. We have used backpropagation algorithm with "Adam" optimiser, trying to minimize the "Categorical cross-entropy" loss. We have also implemented an early stopping criterior with patience value of 100 iterations, i.e. if there is no significant change in the model parameters for 100 iterations then the model will complete its training. We have used a batch size of 1000 and number of epochs being 1000.
 
 ## 5. Real Life Insights
