@@ -22,6 +22,8 @@ Due to large size of the data, it was not possible for us to use it completely f
 
 #### 3.1 Frequency of place_id’s 
 We calculated the frequency of each place_id from the training sample and then plotted it in decreasing sorted order i.e. the place_id with the highest frequency was numbered as 1, then the next highest was numbered 2 and so on as shown in the Figure 1.
-![alt text] (https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/freqplot_place_id.jpg)
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/freqplot_place_id.jpg)
+
 Figure 1. 
 
