@@ -95,6 +95,27 @@ The goal of ensemble methods is to combine the predictions of sev- eral base est
 Here, we have used the concept of soft voting for classifiers. H represents a classifier, where it takes the feature vector X as the input and P(place_id) as output. These classifiers are combined by taking a weighted average of their probabilities and then picking the top 3 place_id’s with the three highest probabilities.
 The weights α, β and γ are tunable, but we have chosen trivial values for the weights where all of them are set to one.
 
+#### 4.3 Neural Networks
+
+Artificial neural networks[6] are one of the main tools used in machine learning. As the âĂIJneuralâĂİ part of their name suggests, they are brain-inspired systems which are intended to replicate the way that we humans learn. Neural networks consist of input and output layers, as well as (in most cases) a hidden layer consisting of units that transform the input into something that the output layer can use.
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/artificial_neural_network.jpg)
+
+###### 4.3.1 Neural Network based model for Place_id prediction
+The Neural network model we have trained has one input layer, 4 hidden layers and an output layers arranged in sequential order. Our hidden layers have 128, 512, 512 and 512 nodes respectively. The all the nodes in the input layer along with the 4 hidden layers have "relu" as their activation function, and the output node has "softmax" activation function, with as many output nodes as the number of unique place_ids available. We have used backpropagation algorithm with "Adam" optimiser, trying to minimize the "Categorical cross-entropy" loss. We have also implemented an early stopping criterior with patience value of 100 iterations, i.e. if there is no significant change in the model parameters for 100 iterations then the model will complete its training. We have used a batch size of 1000 and number of epochs being 1000.
+
+## 5. Real Life Insights
+Check-in prediction has found a lot of real world applications espe- cially for business. Below are the five real world cases which we believe this prediction can be very helpful:
+- Segregating most popular places
+- Check-In can benefit marketers
+- Promoting the Business
+- Location and diaspora based business strategy
+- Prior arrangements can be made by authorities to handle eventuality.
+
+## 6. Conclusion
+The primary goal of this project was to build a classification model which could accurately predict the user check-ins for the artificial world. This task is challenging not only due to the colossal size of the dataset, but also due to the presence of high noise, variability in patterns and high number of unique classes.
+Based on our analysis KNN though a very simple algorithm performed at par with more complex algorithms and considering limited availability of resources, it performed brilliantly. Neural Networks, though performed much better than all the models, could not be materialised because a model on all the data would have consumed considerable resources, for which there was scarcity.
+
 
 
 #### REFERENCES
@@ -105,4 +126,3 @@ The weights α, β and γ are tunable, but we have chosen trivial values for the
 5. Daniel Lowd and Pedro Domingos. 2005. Naive Bayes models for probability estimation. In Proceedings of the 22nd international conference on Machine learning. ACM, 529–536.
 6. Sonali B Maind, Priyanka Wankar, et al. 2014. Research paper on basic of artificial neural network. International Journal on Recent and Innovation Trends in Computing and Communication 2, 1 (2014), 96–100.
 7. Nadia Rahmah and Imas Sukaesih Sitanggang. 2016. Determination of optimal epsilon (eps) value on dbscan algorithm to clustering data on peatland hotspots in sumatra. In IOP Conference Series: Earth and Environmental Science, Vol. 31. IOP Publishing, 012012.
-
