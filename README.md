@@ -40,5 +40,5 @@ We have plotted the frequency versus time of day for the 5 most popular events. 
 
 ![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/hour.jpg)
 
-
+Plotting most popular clusters using the hour component as our third variable give us further insight as Idea behind using hour component is the daily cycles will be visible to us.
 
