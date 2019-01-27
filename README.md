@@ -42,3 +42,10 @@ We have plotted the frequency versus time of day for the 5 most popular events. 
 
 Plotting most popular clusters using the hour component as our third variable give us further insight as Idea behind using hour component is the daily cycles will be visible to us.
 
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/Top5PlaceIds.png)
+
+Below figure shows variation by day of week. It gives us insight that some businesses are busier on the weekend than others and Full Weekly trend can be observed, predictions based on trends can be made.
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/Top5PlaceIds.png)
+
+
