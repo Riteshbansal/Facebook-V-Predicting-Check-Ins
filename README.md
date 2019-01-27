@@ -54,6 +54,19 @@ Density-based spatial clustering[2] of applications with noise (DB- SCAN) is a v
 
 ![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/nearest_neighbour.png)
 
+Based on our analysis of sorted distance to the 300th nearest neighbor, we saw that our data showed best clusters when we used eps value of 0.013 and density of 200.
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/db_200.png)
+
+## 4. Model Building
+In this section, we will be discussing the different models we have used to predict the user check-ins. We have explored various stan- dard classifiers like k-Nearest Neighbors classifier(k-NN), Naive Bayes Classifier, Support Vector Machines(SVMs), Random Forest classifier and also some state of the art classifiers like Artificial Neu- ral Networks(ANNs). In the following, we will only mention the k-NN and the Naive Bayes classifier as they were used in our final formulation. The SVMs and the Random Forest classifiers would be later used as comparison metrics to our current model. We will also describe our Artificial Neural Network model in the extra credits section, where we would be explaining why we decided not to use it in our current model. We have used the these features to train our models : x, y, accuracy, timeof day, and dayof week.
+
+#### 4.1 K-Nearest Neighbors classifier
+The k-Nearest Neighbors classifier is one of the most simple ma- chine learning approaches which tries to classify new test point by deciding its label from the k-"closest" neighbors(nearest neighbors) based on some similarity metric. In our problem, we are trying the predict the place_id’s of an unknown test point by computing the k-nearest neighbors based on "Manhattan distance" and then using a weighted voting to predict its class label(place_id). The advantage of a weighted voting over a simple majority voting is that, by assigning weights based on their distance, i.e. points which have greater distance from the test point will be assigned lower weights and vice-versa. Thus, points closer to the test point will have more influence in the prediction of its class label as compared to points farther away. The Manhattan distance between two points x and y with dimension d, can be computed as follows:
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/Screen Shot 2019-01-27 at 12.51.04 AM.png)
+
+The k-NN models seems to work astonishingly well in cases where it is not expected to perform well due to its simplicity, but the challenge is in tuning its parameters like weights of feature vec- tors,distance metric, weights during voting, and most importantly the value of k. We did not use any weights for the feature vectors here, we have just normalized the dataset. We have also tried the k-NN models using euclidean distance, Manhattan distance and Minkowski distance with p=3,5,7,9. The Manhattan distance out- performed other distance metrics by a large amount, thus we have considered it for training the k-NN models later. We have used two different k-NN models, where in both models, the similarity/distance was computed based on the Manhattan dis- tance, but the weights used during prediction were different. The first model used a weights according to 1/d2 while the other used 1/d, where d is the distance between the ith nearest neighbor and the test point.
 
 
 #### REFERENCES
