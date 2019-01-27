@@ -56,13 +56,12 @@ Density-based spatial clustering[2] of applications with noise (DB- SCAN) is a v
 
 
 
-# REFERENCES
-[1] Leo Breiman. 2001. Random forests. Machine learning 45, 1 (2001), 5–32.
-[2] Martin Ester, Hans-Peter Kriegel, Jörg Sander, Xiaowei Xu, et al. 1996. A density- based algorithm for discovering clusters in large spatial databases with noise.. In
-Kdd, Vol. 96. 226–231.
-[3] Gongde Guo, Hui Wang, David Bell, Yaxin Bi, and Kieran Greer. 2003. KNN model- based approach in classification. In OTM Confederated International Conferences" On the Move to Meaningful Internet Systems". Springer, 986–996.
-[4] Chih-Wei Hsu, Chih-Chung Chang, Chih-Jen Lin, et al. 2003. A practical guide to support vector classification. (2003).
-[5] Daniel Lowd and Pedro Domingos. 2005. Naive Bayes models for probability estimation. In Proceedings of the 22nd international conference on Machine learning. ACM, 529–536.
-[6] Sonali B Maind, Priyanka Wankar, et al. 2014. Research paper on basic of artificial neural network. International Journal on Recent and Innovation Trends in Computing and Communication 2, 1 (2014), 96–100.
-[7] Nadia Rahmah and Imas Sukaesih Sitanggang. 2016. Determination of optimal epsilon (eps) value on dbscan algorithm to clustering data on peatland hotspots in sumatra. In IOP Conference Series: Earth and Environmental Science, Vol. 31. IOP Publishing, 012012.
+#### REFERENCES
+1. Leo Breiman. 2001. Random forests. Machine learning 45, 1 (2001), 5–32.
+2. Martin Ester, Hans-Peter Kriegel, Jörg Sander, Xiaowei Xu, et al. 1996. A density- based algorithm for discovering clusters in large spatial databases with noise.. In Kdd, Vol. 96. 226–231.
+3. Gongde Guo, Hui Wang, David Bell, Yaxin Bi, and Kieran Greer. 2003. KNN model- based approach in classification. In OTM Confederated International Conferences" On the Move to Meaningful Internet Systems". Springer, 986–996.
+4. Chih-Wei Hsu, Chih-Chung Chang, Chih-Jen Lin, et al. 2003. A practical guide to support vector classification. (2003).
+5. Daniel Lowd and Pedro Domingos. 2005. Naive Bayes models for probability estimation. In Proceedings of the 22nd international conference on Machine learning. ACM, 529–536.
+6. Sonali B Maind, Priyanka Wankar, et al. 2014. Research paper on basic of artificial neural network. International Journal on Recent and Innovation Trends in Computing and Communication 2, 1 (2014), 96–100.
+7. Nadia Rahmah and Imas Sukaesih Sitanggang. 2016. Determination of optimal epsilon (eps) value on dbscan algorithm to clustering data on peatland hotspots in sumatra. In IOP Conference Series: Earth and Environmental Science, Vol. 31. IOP Publishing, 012012.
 
