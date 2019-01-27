@@ -21,9 +21,17 @@ The dataset we are working with is very large i.e. contains roughly 30 million t
 Due to large size of the data, it was not possible for us to use it completely for exploratory analysis. Instead we have taken a representative sample from the dataset and used it for the analysis shown below. The representative sample we chose was the first grid from the top left corner of size 1km by 1km. We assume that the analysis we did for this sample population will also hold true for the entire population. The representative sample grid of size 1km by 1km contains 280k training instances with around 5000 unique place_ids. We did the following analysis on the sample grid:
 
 #### 3.1 Frequency of place_id’s 
-We calculated the frequency of each place_id from the training sample and then plotted it in decreasing sorted order i.e. the place_id with the highest frequency was numbered as 1, then the next highest was numbered 2 and so on as shown in the Figure 1.
+We calculated the frequency of each place_id from the training sample and then plotted it in decreasing sorted order i.e. the place_id with the highest frequency was numbered as 1, then the next highest was numbered 2 and so on as shown in the below Figure. 
 
 ![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/freqplot_place_id.jpg)
 
-Figure 1. 
+From the figure, we observe that events/locations have varying popularity. By popularity of an event/location, we refer to the fre- quency of user’s check-in to that particular event. We also notice that the there are only a few very events have a high popularity, some events have an average popularity whereas most other events have very low popularity.
+
+#### 3.2 Scatter plot of x and y
+
+We have plotted the scatter plot of the (x,y) coordinates of top 15 most popular places on our training sample. In the scatter plot shown in Figure 2, each color represents all the check-ins of a particular event,. We see that the events are clustered w.r.t. to the (x,y) coordinates. It is also evident from the scatter plot that the variance of x is larger than the variance of y, this may be due to horizontal nature of the streets from which the users check-in into a particular event. We can also observe some outliers from the scatter plot, these may be primarily due to the use of mobile devices for check-in.
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/Scatter_plot.jpg)
+
+
 
