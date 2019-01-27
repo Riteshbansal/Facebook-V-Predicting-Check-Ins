@@ -87,6 +87,16 @@ Again the likelihood can be written as :
 
 In case of Gaussian Naive Bayes, we are assuming that probability of each feature given a class can be represented using a normal distribution. But we have found out that the features like day of month or month of the year cannot be represented using a normal distribution.
 
+#### 4.3 Ensemble Method
+The goal of ensemble methods is to combine the predictions of sev- eral base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator. For the final model, we would be using an ensemble methods to combine the aforementioned models. What we want to do is to train different weak classifiers and then combine them to form one strong classifier. Ensemble methods also increase the diversity of the model.
+            
+            H : X = (x, y, acc,timeof day, dayof week) → P(placeid) H(X) = argmax[αhknn1(X) + βhknn2(X) +γhnb(X)]
+
+Here, we have used the concept of soft voting for classifiers. H represents a classifier, where it takes the feature vector X as the input and P(place_id) as output. These classifiers are combined by taking a weighted average of their probabilities and then picking the top 3 place_id’s with the three highest probabilities.
+The weights α, β and γ are tunable, but we have chosen trivial values for the weights where all of them are set to one.
+
+
+
 #### REFERENCES
 1. Leo Breiman. 2001. Random forests. Machine learning 45, 1 (2001), 5–32.
 2. Martin Ester, Hans-Peter Kriegel, Jörg Sander, Xiaowei Xu, et al. 1996. A density- based algorithm for discovering clusters in large spatial databases with noise.. In Kdd, Vol. 96. 226–231.
