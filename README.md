@@ -33,5 +33,11 @@ We have plotted the scatter plot of the (x,y) coordinates of top 15 most popular
 
 ![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/Scatter_plot.jpg)
 
+#### 3.3 Frequency vs time of day plots
+
+We have plotted the frequency versus time of day for the 5 most popular events. We see that different events are popular during different times of the day. For example, locations like recreation parks are more popular during the day, concerts are more popular during the nights. In the plots shown in below Figure, each color represents a particu- lar place_id. For a simple analysis, we have selected the 5 most popular events and then observed its popularity( i.e. frequency of check-in) hourly during a period of 24 hours. We have founds results in correspondence to our initial real world analysis of events.
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/hour.jpg)
+
 
 
