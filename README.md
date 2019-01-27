@@ -78,8 +78,11 @@ The optimal value of k for weight = 1/d was found out to be 18 and that for weig
 
 Naive Bayes classifiers[5] are simple probabilistic classifiers based on Bayes theorem and they run on the assumption that there is strong independence between the features. Gaussian Naive Bayes is one of the Naive Bayes classifier that performs better with continuous values, a typical assumption that Gaussian Naive Bayes considers is that the continuous values asso- ciated with each class are distributed. Because of it performance on continuous values we have selected Gaussian Naive Bayes Classifier and it predicts the class which maximizes the probability of the class (in this case place_id) given its features.
 For this problem, the posterior probability of the class i.e. place_id could be written as :
+                      
                       P(place|x,y,accuracy,time) ∝ P(x,y,accuracy,time|place)P(place), 
+
 Again the likelihood can be written as :
+    
     P(x,y,accuracy,time|place) ≈ P(x|place) · P(y|place)· P(accuracy|place) · P(time of day|place)· P(dayof week|place).
 
 In case of Gaussian Naive Bayes, we are assuming that probability of each feature given a class can be represented using a normal distribution. But we have found out that the features like day of month or month of the year cannot be represented using a normal distribution.
