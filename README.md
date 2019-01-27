@@ -100,7 +100,7 @@ Artificial neural networks[6] are one of the main tools used in machine learning
 
 ![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/artificial_neural_network.jpg)
 
-###### 4.3.1 Neural Network based model for Place_id prediction
+#### 4.3.1 Neural Network based model for Place_id prediction
 The Neural network model we have trained has one input layer, 4 hidden layers and an output layers arranged in sequential order. Our hidden layers have 128, 512, 512 and 512 nodes respectively. The all the nodes in the input layer along with the 4 hidden layers have "relu" as their activation function, and the output node has "softmax" activation function, with as many output nodes as the number of unique place_ids available. We have used backpropagation algorithm with "Adam" optimiser, trying to minimize the "Categorical cross-entropy" loss. We have also implemented an early stopping criterior with patience value of 100 iterations, i.e. if there is no significant change in the model parameters for 100 iterations then the model will complete its training. We have used a batch size of 1000 and number of epochs being 1000.
 
 ## 5. Real Life Insights
