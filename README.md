@@ -20,5 +20,5 @@ The dataset we are working with is very large i.e. contains roughly 30 million t
 ## 3. Data Exploration
 Due to large size of the data, it was not possible for us to use it completely for exploratory analysis. Instead we have taken a representative sample from the dataset and used it for the analysis shown below. The representative sample we chose was the first grid from the top left corner of size 1km by 1km. We assume that the analysis we did for this sample population will also hold true for the entire population. The representative sample grid of size 1km by 1km contains 280k training instances with around 5000 unique place_ids. We did the following analysis on the sample grid:
 
-# 3.1 Frequency of place_id’s 
+#### 3.1 Frequency of place_id’s 
 We calculated the frequency of each place_id from the training sample and then plotted it in decreasing sorted order i.e. the place_id with the highest frequency was numbered as 1, then the next highest was numbered 2 and so on as shown in the Figure 1.
