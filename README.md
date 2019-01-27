@@ -46,6 +46,23 @@ Plotting most popular clusters using the hour component as our third variable gi
 
 Below figure shows variation by day of week. It gives us insight that some businesses are busier on the weekend than others and Full Weekly trend can be observed, predictions based on trends can be made.
 
-![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/Top5PlaceIds.png)
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/Top5PlaceIdsdaywise.png)
 
+#### 3.4 Cluster analysis using DB-Scan on location co-ordinates
+
+Density-based spatial clustering[2] of applications with noise (DB- SCAN) is a very popular data clustering algorithm that is commonly used when you have highly dense data and its difficult to segre- gate based on normal classifiers. Since this reasoning very much resonates with our dataset, we, therefore, tried to explore working on this technique on our data set. Another reason to choose this model was our data set contains more than 100,000 unique placed therefore it was logical to bring down to a lower value. In layman terms, DBSCAN groups together points which are close to each other based on a distance measurement (eps) and a min- imum number of points(to decide core point). Even though this technique is very powerful in finding dense regions and cluster them together, one of the drawbacks is we have to provide both distance and number of points. This requires tuning of these param- eters as they are highly dependent on data and its structure. We did some of our own analysis on 10% of data as it was computationally not feasible to do such kind of exploration on whole data set. Our exploration started from [7] where author suggested using nearest neighbour technique for finding best eps value.
+
+![alt text](https://github.com/Riteshbansal/Facebook-V-Predicting-Check-Ins/blob/master/nearest_neighbour.png)
+
+
+
+# REFERENCES
+[1] Leo Breiman. 2001. Random forests. Machine learning 45, 1 (2001), 5–32.
+[2] Martin Ester, Hans-Peter Kriegel, Jörg Sander, Xiaowei Xu, et al. 1996. A density- based algorithm for discovering clusters in large spatial databases with noise.. In
+Kdd, Vol. 96. 226–231.
+[3] Gongde Guo, Hui Wang, David Bell, Yaxin Bi, and Kieran Greer. 2003. KNN model- based approach in classification. In OTM Confederated International Conferences" On the Move to Meaningful Internet Systems". Springer, 986–996.
+[4] Chih-Wei Hsu, Chih-Chung Chang, Chih-Jen Lin, et al. 2003. A practical guide to support vector classification. (2003).
+[5] Daniel Lowd and Pedro Domingos. 2005. Naive Bayes models for probability estimation. In Proceedings of the 22nd international conference on Machine learning. ACM, 529–536.
+[6] Sonali B Maind, Priyanka Wankar, et al. 2014. Research paper on basic of artificial neural network. International Journal on Recent and Innovation Trends in Computing and Communication 2, 1 (2014), 96–100.
+[7] Nadia Rahmah and Imas Sukaesih Sitanggang. 2016. Determination of optimal epsilon (eps) value on dbscan algorithm to clustering data on peatland hotspots in sumatra. In IOP Conference Series: Earth and Environmental Science, Vol. 31. IOP Publishing, 012012.
 
